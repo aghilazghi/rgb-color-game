@@ -21,7 +21,13 @@ h1 {
 }
 
 #message {
-    color: #FFF;
+    text-align: center;
+    margin: 10px;
+}
+
+#stripe {
+    background: #fff;
+    height: 30px;
     text-align: center;
 }
 
