@@ -1,5 +1,7 @@
 body {
     background-color: #232323;
+    margin: 0;
+    font-family: "Arial", "Avenir";
 }
 
 .square {
@@ -8,30 +10,78 @@ body {
     padding-bottom: 30%;
     float: left;
     margin: 1.66%;
+    border-radius: 15%;
+    transition: background 0.8s;
+    -webkit-transition: background 0.8s;
+    -moz-transition: background 0.8s;
+}
+
+.square:hover {
+    cursor: pointer;
 }
 
 #container {
-    margin: 0 auto;
+    margin: 1.2rem auto;
     max-width: 55%;
 }
 
 h1 {
     color: #FFF;
+    font-weight: normal;
     text-align: center;
+    background: steelblue;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 2rem;
 }
 
+#colorDisplay {
+    font-size: 2rem;
+}
+
+#colorGame {
+    display: block;
+    margin-top: 1.5rem;
+}
+
+
 #message {
-    text-align: center;
-    margin: 10px;
+    display: inline-block;
+    width: 15%;
+    letter-spacing: 1px;
+    font-size: inherit;
+    font-weight: bold;
 }
 
 #stripe {
     background: #fff;
-    height: 30px;
+    height: 3rem;
     text-align: center;
 }
 
 .selected {
-    background: blue;
+    background: slateblue;
+    color: #fff;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-family: "Arial", "Avenir";
+    font-size: inherit;
+    height: 100%;
+    color: steelblue;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+button:hover {
+    background: steelblue;
+    color: #fff;
+    cursor: pointer;
 }
 
