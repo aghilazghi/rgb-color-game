@@ -25,13 +25,12 @@ var rgbColorGame = (function() {
             });
         }
     };
-
     var setupModeButtons = function() {
         for(var i = 0; i < modeButtons.length; i++) {
              modeButtons[i].addEventListener("click", function() {
                 modeButtons[0].classList.remove("selected");
                 modeButtons[1].classList.remove("selected");
-                this.classList.add("selected"); 
+                this.classList.add("selected");
                 this.textContent === "Easy" ? numberOfSquares = 3 : numberOfSquares = 6;
                 reset();
              });
@@ -111,5 +110,3 @@ rgbColorGame.init();
 rgbColorGame.resetButton.addEventListener("click", function() {
     rgbColorGame.reset();
 });
-
-
